@@ -5,4 +5,6 @@ config({ path: `.env.${process.env.NODE_ENV || 'development'}.local` });
 
 // Add default port value for safety
 export const PORT = process.env.PORT || 3000;
-export const { NODE_ENV,MONGODB_URI } = process.env;
+export const { NODE_ENV,MONGODB_URI,
+    JWT_SECRET,JWT_EXPIRES_IN
+ } = process.env;
